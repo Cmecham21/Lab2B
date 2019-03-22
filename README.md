@@ -8,13 +8,18 @@ Theoretically, this program could be used in a business to convert a dollar amou
 
 ### Specifics
 This program takes a float variable total, and casts it as an integer. It grabs the inital dollar amount by taking an integer variable "dollars" and dividing the total by 100. For example: 
+
+          
           total = in.nextFloat();
           total = total*100;
-
+          
           dollars = (int) (total/100);
           total = (int) total%100;
-         
-It then follows down the coin tier list starting with half dollars, casting it as an integer, then re-grabbing the total as necessary. For example:  
-           halfDollars = (int) (total/50);
-           total = (int) (total% 50);
+          
+It then follows down the coin tier list starting with half dollars, casting it as an integer, then re-grabbing the total as necessary. For example:            
+          
+          halfDollars = (int) (total/50);
+          total = (int) (total% 50);
+
+
 This same procedure is done down to pennies.           
